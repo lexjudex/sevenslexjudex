@@ -643,7 +643,7 @@ class Sevenslexjudex extends Table
 			self::dbSetCards($player_id, $this->cards->countCardInLocation( 'hand', $player_id ));
 		}
 		
-		$sevenOfSpades=$this->cards->getCardsOfType(1,7)
+		$sevenOfSpades=$this->cards->getCardsOfType(1,7);
 		foreach ( $sevenOfSpades as $seven ) {
 			$this->gamestate->changeActivePlayer($seven ['location_arg']);
 			}
